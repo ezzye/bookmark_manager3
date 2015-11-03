@@ -10,4 +10,5 @@ end
 DataMapper::Logger.new($stdout, :debug)
 DataMapper.setup(:default, 'postgres://localhost/bookmark_mgr_test')
 DataMapper.finalize
-DataMapper.auto_migrate!
+DataMapper.auto_upgrade!
+# DataMapper.auto_migrate!
